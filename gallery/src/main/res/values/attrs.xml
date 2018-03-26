@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GalleryView">
+        <attr name="animDuration" format="integer"/>
+        <attr name="saveText" format="string"/>
+        <attr name="saveTextSize" format="dimension"/>
+        <attr name="saveTextColor" format="color"/>
+    </declare-styleable>
+</resources>

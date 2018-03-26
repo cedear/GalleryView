@@ -1,0 +1,5 @@
+<resources>
+    <string name="gallery_app_name">gallery</string>
+    <string name="gallery_save">保存</string>
+    <string name="gallery_save_picture_permission_request_failed">写存储卡权限申请失败, 无法保存图片</string>
+</resources>

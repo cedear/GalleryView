@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/url_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="#ff6666"
+                android:text="加载URL格式图片"/>
+
+            <GridView
+                android:id="@+id/url_type_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/url_type"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                />
+
+            <TextView
+                android:id="@+id/drawable_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/url_type_gridView"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="#ff6666"
+                android:text="加载Drawable格式图片"/>
+
+            <GridView
+                android:id="@+id/drawabl_type_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drawable_type"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <gallery.demo.com.gallery.view.GalleryView
+        android:id="@+id/photo_gallery_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:animDuration="300"
+        app:saveText="保存至相册"
+        app:saveTextColor="#987622"/>
+
+</RelativeLayout>
